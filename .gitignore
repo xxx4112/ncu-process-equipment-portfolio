@@ -1,0 +1,153 @@
+# ============================================================
+#  课程作品集仓库 .gitignore
+#  作用：告诉 Git「哪些文件不要纳入版本管理」
+#  学号: 5801126026  |  姓名: 相潘卓  |  专业: 过程装备与控制工程
+# ============================================================
+
+# ---------- 操作系统自动生成 ----------
+# Windows 缩略图缓存、桌面配置
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS 的 Finder 元数据
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ---------- 编辑器 / IDE ----------
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# JetBrains (PyCharm / CLion / IDEA)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# 通用编辑器备份与临时文件
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.temp
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- C / C++ (过程装备/控制常用) ----------
+*.o
+*.obj
+*.a
+*.lib
+*.exe
+*.out
+*.dSYM/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+
+# ---------- MATLAB / Simulink ----------
+*.asv
+*.m~
+slprj/
+*.slxc
+*.autosave
+
+# ---------- 仿真 / 工程软件工程文件缓存 ----------
+# ANSYS / SolidWorks / AutoCAD 临时文件
+*.chk
+*.dwl
+*.dwl2
+*.bak.*
+_asm*.tmp
+*.log.lck
+*.SLDPRT~
+*.SLDASM~
+
+# ---------- 实验数据 / 大文件 ----------
+# 原始实验数据与结果输出（按需保留，勿提交大文件）
+*.csv.tmp
+*.h5
+*.hdf5
+*.mat.bak
+*.pkl
+*.npy
+*.npz
+data/raw/
+outputs/
+results/*.pdf
+!results/.gitkeep
+
+# ---------- Office 临时文件 ----------
+# Word / Excel / PPT 打开时产生的临时锁文件
+~$*.doc*
+~$*.xls*
+~$*.ppt*
+*.docx~
+*.xlsx~
+
+# ---------- LaTeX ----------
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.out
+*.nav
+*.snm
+*.vrb
+
+# ---------- 压缩包 / 二进制产物 ----------
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+!*.tar.gz.keep
+
+# ---------- 密钥 / 隐私（务必不要提交！） ----------
+.env
+.env.*
+*.pem
+*.key
+*.p12
+secrets.json
+credentials.json
+token.txt
+
+# ---------- 保留占位文件 ----------
+# 让 data/ results/ docs/ 这类空目录也能被 Git 跟踪
+!.gitkeep
+!.github/
+!.gitattributes
